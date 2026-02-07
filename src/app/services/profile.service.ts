@@ -190,9 +190,9 @@ export class ProfileService {
         featured: true
       },
       {
-        title: 'Advanced RAG System',
-        description: 'Production-ready Retrieval-Augmented Generation system using LangChain and ChromaDB. Features hybrid search combining semantic and keyword matching with BM25 re-ranking for optimal retrieval accuracy.',
-        technologies: ['Python', 'LangChain', 'ChromaDB', 'OpenAI', 'FastAPI'],
+        title: 'Advanced RAG',
+        description: 'Full-stack Retrieval-Augmented Generation application with a Next.js chat interface and FastAPI backend. Supports multi-provider LLM switching (Groq, OpenAI, Gemini, WatsonX), streaming responses via WebSocket, drag-and-drop document ingestion across 9 formats, source citations with relevance scores, and a dark/light themed UI.',
+        technologies: ['Next.js', 'FastAPI', 'TypeScript', 'Python', 'LangChain', 'ChromaDB', 'Tailwind CSS'],
         github: 'https://github.com/abinovarghese/AdvancedRAG',
         featured: true
       },
