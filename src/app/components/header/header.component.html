@@ -1,0 +1,25 @@
+<header [class.scrolled]="isScrolled()">
+  <div class="header-container">
+    <a href="#" class="logo">
+      <span class="logo-text">AV</span>
+    </a>
+
+    <nav class="nav-desktop">
+      @for (link of navLinks; track link.href) {
+        <a [href]="link.href" class="nav-link">{{ link.label }}</a>
+      }
+      <a href="/assets/resume.html" target="_blank" class="btn btn-primary">Resume</a>
+    </nav>
+
+    <button class="mobile-menu-btn" (click)="toggleMobileMenu()" [attr.aria-expanded]="isMobileMenuOpen()">
+      <span class="hamburger" [class.open]="isMobileMenuOpen()"></span>
+    </button>
+  </div>
+
+  <nav class="nav-mobile" [class.open]="isMobileMenuOpen()">
+    @for (link of navLinks; track link.href) {
+      <a [href]="link.href" class="nav-link" (click)="closeMobileMenu()">{{ link.label }}</a>
+    }
+    <a href="/assets/resume.html" target="_blank" class="btn btn-primary">Resume</a>
+  </nav>
+</header>
